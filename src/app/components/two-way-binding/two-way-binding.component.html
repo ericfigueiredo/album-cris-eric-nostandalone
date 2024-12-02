@@ -1,0 +1,18 @@
+<div class="class">
+  <p>Aula #15!</p>
+  <h2>Two way data binding</h2>
+  <form>
+    <input type="text" [(ngModel)]="name"
+    name="name" placeholder="Digite seu nome">
+    <input type="text" [(ngModel)]="age"
+    name="name" placeholder="Digite sua idade">
+    <input type="text" [(ngModel)]="job"
+    name="name" placeholder="Digite sua profissão">
+    <input type="submit" value="Enviar">
+  </form>
+  <div *ngIf="name != ''">
+    <p>Nome: {{name}}<br></p>
+    <p>Idade: {{age}} anos<br></p>
+    <p>Profissão: {{job}}<br></p>
+  </div>
+</div>
